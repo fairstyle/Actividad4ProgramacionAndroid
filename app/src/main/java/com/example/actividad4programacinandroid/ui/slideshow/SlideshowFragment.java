@@ -61,7 +61,10 @@ public class SlideshowFragment extends Fragment {
                 if(!latitudDestinoInput.getText().toString().equals("") && !longitudDestinoInput.getText().toString().equals("")) {
                     intent.putExtra("opc", 3);
 
-                    System.out.println(opc3Origen.toString());
+                    // CORDENADAS MEDIANTE GPS, me manda a la punta del cerro en el emulador, pero las cordenadas se obtienen.
+                    //System.out.print("Cordenadas Origen Mediante GPS: ");
+                    //System.out.println(opc3Origen.toString());
+
                     intent.putExtra("LatitudOrigen", (float)opc3Origen.latitude);
                     intent.putExtra("LongitudOrigen", (float)opc3Origen.longitude);
 

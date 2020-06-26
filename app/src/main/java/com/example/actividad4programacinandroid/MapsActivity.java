@@ -72,7 +72,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if(extras != null){
 
             Toast.makeText(this, "Buscando cordenadas", Toast.LENGTH_SHORT).show();
-
             LatLng origen = new LatLng(extras.getFloat("LatitudOrigen"),extras.getFloat("LongitudOrigen"));
 
             switch (extras.getInt("opc")){
